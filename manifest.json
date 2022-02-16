@@ -4,8 +4,8 @@
 	"manifest_version": 2,
 	"name": "GTrash",
 	"author": "Roy Orbison",
-	"version": "0.1.0",
-	"description": "Provides a keyboard shortcut (Shift + Alt + Delete by default) to move selected mail to its account's Trash folder, regardless of normal delete setting.",
+	"version": "0.1.1",
+	"description": "Provides a keyboard shortcut (Shift + Alt + Delete by default) to move mail to its account's Trash folder, regardless of normal delete setting.",
 	"icons": {
 		"16": "icon.svg",
 		"32": "icon.svg",
