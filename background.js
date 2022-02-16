@@ -7,12 +7,41 @@
 
 const commandGtrash = 'gtrash';
 const folderTypeTrash = 'trash';
+const tabTypeMessage = 'messageDisplay';
 
 messenger.commands.onCommand.addListener(async function(command) {
 	if (command === commandGtrash) {
 		try {
-			let messageList = await messenger.mailTabs.getSelectedMessages(),
+			let messageList,
+				tab,
 				moves = {};
+			try {
+				messageList = await messenger.mailTabs.getSelectedMessages();
+			}
+			catch (error) {
+				let tabs = await messenger.tabs.query({
+						active: true,
+						currentWindow: true
+					}),
+					displayed;
+				if (
+					tabs?.length
+					&& (tab = tabs[0])
+					&& tab.id !== TAB_ID_NONE
+					&& tab.type === tabTypeMessage
+					&& (displayed = await messenger.messageDisplay.getDisplayedMessage(tab.id))
+				) {
+					// synthesise for iteration
+					messageList = {
+						messages: [
+							displayed
+						]
+					};
+				}
+				else {
+					throw error;
+				}
+			}
 			do {
 				if (messageList?.messages?.length) {
 					for (let messageHeader of messageList.messages) {
@@ -53,6 +82,9 @@ messenger.commands.onCommand.addListener(async function(command) {
 						if (moves[accountId].trash || moves[accountId].ids.length) {
 							await messenger.messages.move(moves[accountId].ids, moves[accountId].trash);
 							moves[accountId].ids = [];
+							if (tab) {
+								messenger.tabs.remove(tab.id);
+							}
 						}
 					}
 				}
