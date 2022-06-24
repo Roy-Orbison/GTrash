@@ -1,6 +1,7 @@
 # <img width="24" height="24" src="icon.svg"> GTrash
 
-Provides a keyboard shortcut (<kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>Del</kbd> by default) to move selected messages to the Trash folder regardless of the mail account's _When I delete a message_ setting. It was developed to improve the experience of using GMail via IMAP.
+Provides a button and keyboard shortcut (<kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>Del</kbd> by default) to move selected messages to the Trash folder regardless of the mail account's _When I delete a message_ setting.
+It was developed to improve the experience of using GMail via IMAP.
 
 The [recommended option for that setting][0] is _Just mark it as deleted_, which preserves the concept of Thunderbird folders acting as GMail labels.
 Deleting from a folder should only remove that label, and leave the message archived under _All mail_.

@@ -4,15 +4,10 @@
 	"manifest_version": 2,
 	"name": "GTrash",
 	"author": "Roy Orbison",
-	"version": "0.1.1",
-	"description": "Provides a keyboard shortcut (Shift + Alt + Delete by default) to move mail to its account's Trash folder, regardless of normal delete setting.",
+	"version": "0.2.0",
+	"description": "Provides a button and keyboard shortcut (Shift + Alt + Delete by default) to move mail to its account's Trash folder, regardless of normal delete setting.",
 	"icons": {
-		"16": "icon.svg",
-		"32": "icon.svg",
-		"48": "icon.svg",
-		"96": "icon.svg",
-		"128": "icon.svg",
-		"512": "icon.svg"
+		"96": "icon.svg"
 	},
 	"homepage_url": "https://github.com/Roy-Orbison/GTrash",
 	"applications": {
@@ -37,7 +32,21 @@
 			"suggested_key": {
 				"default": "Shift+Alt+Delete"
 			},
-			"description": "Move to Trash"
+			"description": "Move selected/active messages to Trash"
 		}
+	},
+	"message_display_action": {
+		"default_icon": {
+			"96": "icon.svg"
+		},
+		"default_label": "To Trash",
+		"default_title": "Move to Trash",
+		"theme_icons": [
+			{
+				"dark": "icon-black.svg",
+				"light": "icon-white.svg",
+				"size": 96
+			}
+		]
 	}
 }
