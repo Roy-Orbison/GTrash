@@ -1,0 +1,22 @@
+{
+	"extensionName": {
+		"message": "GBin",
+		"description": "Name of the extension."
+	},
+	"extensionDescription": {
+		"message": "Provides a button and keyboard shortcut (Shift + Alt + Delete by default) to move mail to its account's Bin folder, regardless of normal delete setting.",
+		"description": "Description of the extension."
+	},
+	"commandDescription": {
+		"message": "Move selected/active messages to Bin",
+		"description": "Description of the keyboard shortcut action."
+	},
+	"actionLabel": {
+		"message": "To Bin",
+		"description": "Label on action button."
+	},
+	"actionTitle": {
+		"message": "Move to Bin",
+		"description": "Title of action button."
+	}
+}

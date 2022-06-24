@@ -2,10 +2,11 @@
 	"licence": "This Source Code Form is subject to the terms of the Mozilla Public License, v2.0. If a copy of the MPL was not distributed with this file, you can obtain one at https://mozilla.org/MPL/2.0/",
 	"copyright": "© 2022 Roy Orbison",
 	"manifest_version": 2,
-	"name": "GTrash",
+	"default_locale": "en",
+	"name": "__MSG_extensionName__",
 	"author": "Roy Orbison",
-	"version": "0.2.0",
-	"description": "Provides a button and keyboard shortcut (Shift + Alt + Delete by default) to move mail to its account's Trash folder, regardless of normal delete setting.",
+	"version": "0.2.1",
+	"description": "__MSG_extensionDescription__",
 	"icons": {
 		"96": "icon.svg"
 	},
@@ -32,15 +33,15 @@
 			"suggested_key": {
 				"default": "Shift+Alt+Delete"
 			},
-			"description": "Move selected/active messages to Trash"
+			"description": "__MSG_commandDescription__"
 		}
 	},
 	"message_display_action": {
 		"default_icon": {
 			"96": "icon.svg"
 		},
-		"default_label": "To Trash",
-		"default_title": "Move to Trash",
+		"default_label": "__MSG_actionLabel__",
+		"default_title": "__MSG_actionTitle__",
 		"theme_icons": [
 			{
 				"dark": "icon-black.svg",
