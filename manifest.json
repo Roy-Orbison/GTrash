@@ -5,16 +5,16 @@
 	"default_locale": "en",
 	"name": "__MSG_extensionName__",
 	"author": "Roy Orbison",
-	"version": "0.2.1",
+	"version": "0.3.0",
 	"description": "__MSG_extensionDescription__",
 	"icons": {
-		"96": "icon.svg"
+		"128": "icon.svg"
 	},
 	"homepage_url": "https://github.com/Roy-Orbison/GTrash",
 	"applications": {
 		"gecko": {
 			"id": "gtrash@roy-orbison.test",
-			"strict_min_version": "91.0"
+			"strict_min_version": "102.0"
 		}
 	},
 	"background": {
@@ -38,16 +38,9 @@
 	},
 	"message_display_action": {
 		"default_icon": {
-			"96": "icon.svg"
+			"16": "icon-action.svg"
 		},
 		"default_label": "__MSG_actionLabel__",
-		"default_title": "__MSG_actionTitle__",
-		"theme_icons": [
-			{
-				"dark": "icon-black.svg",
-				"light": "icon-white.svg",
-				"size": 96
-			}
-		]
+		"default_title": "__MSG_actionTitle__"
 	}
 }
