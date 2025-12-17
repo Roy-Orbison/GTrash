@@ -5,7 +5,7 @@
 	"default_locale": "en",
 	"name": "__MSG_extensionName__",
 	"author": "Roy Orbitson",
-	"version": "0.3.0",
+	"version": "0.4.0",
 	"description": "__MSG_extensionDescription__",
 	"icons": {
 		"128": "icon.svg"

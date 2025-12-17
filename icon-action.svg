@@ -1,8 +1,16 @@
 <!-- This Source Code Form is subject to the terms of the Mozilla Public
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<svg xmlns="http://www.w3.org/2000/svg" fill-opacity="context-fill-opacity" viewBox="-2 0 16 16" width="16" height="16">
-	<path d="M4 3c-.554 0-1 .446-1 1v1h10V4c0-.554-.446-1-1-1Zm0 3v7c0 .554.446 1 1 1h6c.554 0 1-.446 1-1V6Z" fill="context-fill"/>
-	<path d="M7 1c-.545 0-1 .455-1 1H4c-1.1 0-2 .9-2 2v1c0 .545.455 1 1 1v7c0 1.1.9 2 2 2h6c1.1 0 2-.9 2-2V6c.545 0 1-.455 1-1V4c0-1.1-.9-2-2-2h-2c0-.545-.455-1-1-1ZM4 3h8c.563 0 1 .437 1 1v1H3V4c0-.563.437-1 1-1Zm0 3h8v7c0 .563-.437 1-1 1H5c-.563 0-1-.437-1-1Zm2.5 1a.5.5 0 0 0-.5.5v5a.5.5 0 0 0 .5.5.5.5 0 0 0 .5-.5v-5a.5.5 0 0 0-.5-.5Zm3 0a.5.5 0 0 0-.5.5v5a.5.5 0 0 0 .5.5.5.5 0 0 0 .5-.5v-5a.5.5 0 0 0-.5-.5Z" fill="context-stroke"/>
-	<path fill="#59d49d" stroke="#59d49d" d="M-1.5,6h3v-2l5,5l-5,5v-2h-3z"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 0 16 16" width="16" height="16">
+	<style>
+		:root{--l:rgb(244,244,245);--d:rgb(24,24,27);--g:rgb(89,212,157)}
+		path{fill:var(--d)}
+		.tint,.lines{stroke-width:0}
+		.tint{fill-opacity:0.2}
+		@media(prefers-color-scheme:dark){path{fill:var(--l)}}
+		.arrow{fill:var(--g);stroke:var(--g);fill-opacity:0.8}
+	</style>
+	<path class="tint" d="M4 3c-.554 0-1 .446-1 1v1h10V4c0-.554-.446-1-1-1Zm0 3v7c0 .554.446 1 1 1h6c.554 0 1-.446 1-1V6Z"/>
+	<path class="lines" d="M7 1c-.545 0-1 .455-1 1H4c-1.1 0-2 .9-2 2v1c0 .545.455 1 1 1v7c0 1.1.9 2 2 2h6c1.1 0 2-.9 2-2V6c.545 0 1-.455 1-1V4c0-1.1-.9-2-2-2h-2c0-.545-.455-1-1-1ZM4 3h8c.563 0 1 .437 1 1v1H3V4c0-.563.437-1 1-1Zm0 3h8v7c0 .563-.437 1-1 1H5c-.563 0-1-.437-1-1Zm2.5 1a.5.5 0 0 0-.5.5v5a.5.5 0 0 0 .5.5.5.5 0 0 0 .5-.5v-5a.5.5 0 0 0-.5-.5Zm3 0a.5.5 0 0 0-.5.5v5a.5.5 0 0 0 .5.5.5.5 0 0 0 .5-.5v-5a.5.5 0 0 0-.5-.5Z"/>
+	<path class="arrow" d="M-1.5,6h3v-2l5,5l-5,5v-2h-3z"/>
 </svg>
