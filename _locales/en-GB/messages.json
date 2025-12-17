@@ -16,7 +16,7 @@
 		"description": "Label on action button."
 	},
 	"actionTitle": {
-		"message": "Move to Bin",
+		"message": "Move message to Bin",
 		"description": "Title of action button."
 	}
 }
